@@ -6,7 +6,6 @@ const porjectRoutes = require('./routes/projectRoutes');
 const bodyParser = require('body-parser');
 const { json } = require('express');
 const app = express();
-const PORT = 8080;
 
 const dbURL = process.env.DATABASE_URL;
 
@@ -26,6 +25,6 @@ app.get('/', (req, res) => {
   res.send('hello from the home page');
 })
 
-app.listen(PORT, () => console.log('Server is running on port', PORT))
+app.listen(process.env.PORT || 8080, () => console.log('Server is running on port', PORT))
 
 console.log('first')
