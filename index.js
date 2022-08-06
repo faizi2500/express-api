@@ -25,6 +25,6 @@ app.get('/', (req, res) => {
   res.send('hello from the home page');
 })
 
-app.listen(process.env.PORT || 8080, () => console.log('Server is running on port', PORT))
+app.listen(process.env.PORT || 8080, () => console.log('Server is running on port'))
 
 console.log('first')
