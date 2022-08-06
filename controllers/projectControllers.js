@@ -45,5 +45,18 @@ const project_delete = (req, res) => {
     });
 };
 
+// const project_update = (req, res) => {
+//   const updateProfile = crmModel.findByIdAndUpdate(req.body.id, {
+//     user_name: req.body.user_name,
+//     user_email: req.body.user_email,
+//     user_mobile: req.body.user_mobile,
+//     user_comment: req.body.user_comment,
+//   }, {
+//     new: true
+//   })
+//   if (!updateProfile) res.status(404).send('not updated');
+//   res.send(updateProfile);
+// }
+
 
 module.exports = { projects_all, project_get_byID, project_delete, project_create }
