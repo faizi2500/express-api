@@ -17,6 +17,10 @@ const crmSchema = new Schema({
   },
   user_comments: {
     type: String,
+  },
+  user_subscribed: {
+    type: Boolean,
+    required: true,
   }
 }, {
   timestamps: true,
