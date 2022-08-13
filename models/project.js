@@ -21,6 +21,13 @@ const crmSchema = new Schema({
   user_subscribed: {
     type: Boolean,
     required: true,
+  },
+  user_country: {
+    type: String,
+    required: true,
+  },
+  user_city: {
+    type: String,
   }
 }, {
   timestamps: true,
